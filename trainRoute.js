@@ -16,6 +16,9 @@
  * - https://www.youtube.com/watch?v=cWNEl4HE2OE
  */
 function trainRoute(routeGraph, departure, arrival) {
+  // If we cannot find the departure station, just return null
+  if (!routeGraph.has(departure)) return null
+
   // Initialize the queue with the departure station
   const queue = [departure]
   // Cache for visited stations so we don't have to visit it again and might cause an infinite loop

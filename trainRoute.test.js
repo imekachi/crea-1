@@ -37,6 +37,14 @@ G,J,20`)
       input: ['A', 'J'],
       output: null,
     },
+    {
+      input: ['Z', 'A'],
+      output: null,
+    },
+    {
+      input: ['D', 'A'],
+      output: null,
+    },
   ]
 
   specs.forEach(({ input, output }) => {

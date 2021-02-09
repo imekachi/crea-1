@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "trainRoute": "node index.js --file=routes.csv",
     "test": "jest"
   },
   "author": "Saran Weerakun",
