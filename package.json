@@ -1,0 +1,18 @@
+{
+  "name": "saran-interview-crea-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Saran Weerakun",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "prompts": "^2.4.0"
+  }
+}
