@@ -1,5 +1,5 @@
 # Train Routes CLI App
-Calculate fastest route from station to station
+Find the fastest route from station to station.
 
 ## Installation
 ```sh
