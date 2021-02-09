@@ -1,5 +1,17 @@
 /**
- * Thank you
+ * Map of connected station which contains duration between them
+ * @typedef {Map<string, Map<string, number>>} RouteGraph
+ */
+
+/**
+ * Calculate and find the fastest route
+ *
+ * @param {RouteGraph} routeGraph
+ * @param {string} departure station
+ * @param {string} arrival station
+ * @return {null | { stops: number, duration: number }}
+ *
+ * Special thanks to these video for teaching me the algorithm
  * - https://www.youtube.com/watch?v=pVfj6mxhdMw
  * - https://www.youtube.com/watch?v=cWNEl4HE2OE
  */
@@ -59,6 +71,11 @@ function trainRoute(routeGraph, departure, arrival) {
   return { stops: stops[arrival], duration: duration[arrival] }
 }
 
+/**
+ *
+ * @param {string} routeCSVStr
+ * @returns {RouteGraph}
+ */
 function generateGraph(routeCSVStr) {
   const trainRouteGraph = new Map()
   routeCSVStr.split(/\n/).forEach(data => {
